@@ -1,0 +1,39 @@
+// {
+//   // 使用 IntelliSense 了解相关属性。 
+//   // 悬停以查看现有属性的描述。
+//   // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+//   "version": "0.2.0",
+//   "configurations": [
+//     {
+//       "type": "chrome",
+//       "request": "launch",
+//       "name": "针对 localhost 启动 Chrome",
+//       "url": "http://localhost:8080/language",
+//       "webRoot": "${workspaceRoot}/src",
+//       "sourceMaps": true,
+//       // "sourceMapPathOverrides": { //指定生成的sourceMap路径，参考浏览器生成的 .目录和src目录
+//       //   "webpack:///./src/*": "${webRoot}/*",
+//       //   "webpack:///src/*": "${webRoot}/*"
+//       // },
+//     }
+//   ]
+// }
+
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}/src",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      }
+    }
+  ]
+}
